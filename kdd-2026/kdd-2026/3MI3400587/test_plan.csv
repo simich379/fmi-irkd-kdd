@@ -1,0 +1,6 @@
+id,file,query,expected_tool,expected_result,relevant_chunks_total
+T1,lecture_ai_agent.txt,"Какво е RAG?",vector_search,"RAG комбинира retrieval и generation, като отговорът се базира на намерен контекст.",2
+T2,lecture_ai_agent.txt,"Какви tools използва агентът?",vector_search,"OCR, file parsing, vector search, Python analysis.",3
+T3,sample_invoice.png,"Извлечи сумата и опиши документа.",ocr,"Фактура/разписка с артикули и обща сума 42.50 лв.",1
+T4,rag_diagram.png,"Опиши архитектурата на системата.",vision,"Upload, processing, embeddings, vector store, AI agent, final answer.",1
+T5,lecture_ai_agent.txt,"Какъв е основният извод за локалното изпълнение?",vector_search,"Локалното изпълнение пази данните, но е по-бавно и изисква ресурси.",2

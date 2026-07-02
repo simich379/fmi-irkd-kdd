@@ -1,0 +1,16 @@
+test_id,config,file,query,expected_tool,actual_extraction_tool,chunk_size,top_k,num_chunks,precision_at_k,recall_at_k,tool_success,human_score_1_5,response_time_sec
+T1,A_under_context,lecture_ai_agent.txt,Какво е RAG?,vector_search,file_parsing,250,3,9,0,0,1,2,0.003
+T2,A_under_context,lecture_ai_agent.txt,Какви tools използва агентът?,vector_search,file_parsing,250,3,9,0.333,0.333,1,4,0.003
+T3,A_under_context,sample_invoice.png,Извлечи сумата и опиши документа.,ocr,ocr,250,3,1,0,0,1,2,0.249
+T4,A_under_context,rag_diagram.png,Опиши архитектурата на системата.,vision,ocr,250,3,1,0,0,1,2,0.229
+T5,A_under_context,lecture_ai_agent.txt,Какъв е основният извод за локалното изпълнение?,vector_search,file_parsing,250,3,9,0.333,0.5,1,4,0.002
+T1,B_balanced,lecture_ai_agent.txt,Какво е RAG?,vector_search,file_parsing,800,3,3,0,0,1,2,0.002
+T2,B_balanced,lecture_ai_agent.txt,Какви tools използва агентът?,vector_search,file_parsing,800,3,3,0.667,0.667,1,5,0.002
+T3,B_balanced,sample_invoice.png,Извлечи сумата и опиши документа.,ocr,ocr,800,3,1,0,0,1,2,0.23
+T4,B_balanced,rag_diagram.png,Опиши архитектурата на системата.,vision,ocr,800,3,1,0,0,1,2,0.236
+T5,B_balanced,lecture_ai_agent.txt,Какъв е основният извод за локалното изпълнение?,vector_search,file_parsing,800,3,3,0.333,0.5,1,4,0.002
+T1,C_noisy_context,lecture_ai_agent.txt,Какво е RAG?,vector_search,file_parsing,1600,5,2,0,0,1,2,0.002
+T2,C_noisy_context,lecture_ai_agent.txt,Какви tools използва агентът?,vector_search,file_parsing,1600,5,2,0.2,0.333,1,2,0.002
+T3,C_noisy_context,sample_invoice.png,Извлечи сумата и опиши документа.,ocr,ocr,1600,5,1,0,0,1,2,0.222
+T4,C_noisy_context,rag_diagram.png,Опиши архитектурата на системата.,vision,ocr,1600,5,1,0,0,1,2,0.233
+T5,C_noisy_context,lecture_ai_agent.txt,Какъв е основният извод за локалното изпълнение?,vector_search,file_parsing,1600,5,2,0.2,0.5,1,2,0.002
